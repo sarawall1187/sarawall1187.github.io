@@ -1,0 +1,20 @@
+# Site settings
+author: Sara Walker
+title: 
+header-img: img/home-bg.png
+email: sarawall1187@gmail.com
+copyright_name: Sara Walker
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  sarawall1187
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
