@@ -1,11 +1,11 @@
 # Site settings
 author: Sara Walker
-title: 
+title: Sara Walker Blogs
 header-img: img/home-bg.png
 email: sarawall1187@gmail.com
 copyright_name: Sara Walker
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A Beginners Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  sarawall1187
