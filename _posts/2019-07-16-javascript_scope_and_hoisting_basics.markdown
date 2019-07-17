@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "JavaScript: Scope and Hoisting Basics"
-date:       2019-07-17 02:13:08 +0000
+date:       2019-07-16 22:13:09 -0400
 permalink:  javascript_scope_and_hoisting_basics
 ---
 
@@ -19,9 +19,9 @@ Anything outside of a function *but* inside a JS file( or between two script tag
 var hey = "Hey!"  
 
 function sayHey() {
-     // LOCAL- inside this function
+ // LOCAL- inside this function
      var hi = "Hi!"
-		 console.log(hi) // Hi!
+ console.log(hi) // Hi!
 }
 
 // GLOBAL- outside function
