@@ -8,13 +8,13 @@ permalink:  javascript_scope_and_hoisting_basics
 
 Lets talk about two fundamental building blocks of JavaScript: Scope and Hoisting. 
 
-To start with the topic of scope, simply put, means the location in your code that a variable is declared. A variable is a name given to some data you wish to hold in memory. They are written as a declaration and initialization, typically. See below example:
+To start with the topic of scope, simply put, means the location in your code where a variable is declared. A variable is a name given to some data you wish to hold in memory. They are written as a declaration and initialization, typically. See below example:
 ```
 var newVariable = "I'm a string that can be accessed later with this identifier called newVariable!"
      (declaration)                                               (initialization)
 ```
 
-Anything outside of a function *but* inside a JS file( or between two script tags ) will be **globally** scoped. Any variable declared inside of a function will be **locally** scoped. Globally scoped declarations will be available for use anywhere in your code. The locals will only be available inside the function at hand. Lets look at a simple example:
+Any variable outside of a function *but* inside a JS file( or between two script tags ) will be **globally** scoped. Any variable declared inside of a function will be **locally** scoped. Globally scoped declarations will be available for use anywhere in your code. The locals will only be available inside the function at hand. Lets look at a simple example:
 ```
 var hey = "Hey!"  
 
@@ -58,9 +58,9 @@ Last thing on scope: **Lexical** scope. This means the children functions inside
        function babyAnimal() {
       	 console.log(cat)
 	       console.log(dog)
-	      console.log(fish)
-	 }
-	 babyAnimal()	 
+	       console.log(fish)
+	  }
+	  babyAnimal()	 
  }
  
  mamaAnimal()
@@ -69,7 +69,7 @@ Last thing on scope: **Lexical** scope. This means the children functions inside
 //Pluto
 //Nemo
 ```
-Now that we understand scope a bit better, we can go over hoisting. Lets first understand that when a document is loaded, the JavaScript is read in two phases. The first phase is the creation phase- a lot of stuff happens here but as it relates to hoisting- the variable and function declarations made throughout your code are read and set aside in memory. The second phase is called the execution phase and that is where assigments are made. Lets circle back around to the first example given at the very top:
+Now that we understand scope a bit better, we can go over hoisting. Lets first understand that when a document is loaded, the JavaScript is read in two phases. The first phase is the compile phase- a lot of stuff happens here but as it relates to hoisting- the variable and function declarations made throughout your code are read and set aside in memory. The second phase is called the execution phase and that is where assigments are made. Lets circle back around to the first example given at the very top:
  ```
 var newVariable = "I'm a string that can be accessed later with this identifier called newVariable!"
   (declaration- this variable name **only** is stored in memory)       (assigment is executed in 2nd phase)
